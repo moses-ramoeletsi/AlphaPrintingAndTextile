@@ -104,7 +104,7 @@ const UserDashboard = () => {
                   <div>
                     <div className="text-sm text-slate-500">Total Spent</div>
                     <div className="text-xl font-semibold">
-                      ${orders.reduce((total, order) => total + order.total, 0).toFixed(2)}
+                      M{orders.reduce((total, order) => total + order.total, 0).toFixed(2)}
                     </div>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ const UserDashboard = () => {
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-900">
-                          ${order.total.toFixed(2)}
+                          M{order.total.toFixed(2)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-500">
                           <button className="text-blue-500 hover:text-blue-600">

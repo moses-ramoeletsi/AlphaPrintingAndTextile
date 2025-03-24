@@ -92,7 +92,7 @@ const OrderPage = () => {
                   <div className="flex justify-between items-start">
                     <div>
                       <h4 className="font-medium text-slate-900">{product.name}</h4>
-                      <p className="text-slate-600 text-sm mt-1">${product.price.toFixed(2)}</p>
+                      <p className="text-slate-600 text-sm mt-1">M{product.price.toFixed(2)}</p>
                     </div>
                     <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${
                       orderDetails.product === product.id 
@@ -483,25 +483,25 @@ const OrderPage = () => {
                       </p>
                     )}
                   </div>
-                  <p className="font-medium text-slate-900">${subtotal.toFixed(2)}</p>
+                  <p className="font-medium text-slate-900">M{subtotal.toFixed(2)}</p>
                 </div>
               </div>
               
               <div className="border-b border-slate-200 pb-4 pt-2">
                 <div className="flex justify-between">
                   <p className="text-slate-600">Subtotal</p>
-                  <p className="text-slate-900">${subtotal.toFixed(2)}</p>
+                  <p className="text-slate-900">M{subtotal.toFixed(2)}</p>
                 </div>
                 <div className="flex justify-between mt-2">
                   <p className="text-slate-600">Shipping</p>
-                  <p className="text-slate-900">${shipping.toFixed(2)}</p>
+                  <p className="text-slate-900">M{shipping.toFixed(2)}</p>
                 </div>
               </div>
               
               <div className="pt-2">
                 <div className="flex justify-between font-medium">
                   <p className="text-slate-900">Total</p>
-                  <p className="text-blue-600">${total.toFixed(2)}</p>
+                  <p className="text-blue-600">M{total.toFixed(2)}</p>
                 </div>
               </div>
             </div>

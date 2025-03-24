@@ -21,7 +21,7 @@ const ServiceDetail = () => {
         "Multiple size options for your embroidery needs"
       ],
       turnaround: "3-5 business days",
-      priceRange: "$15-$50 depending on size and complexity"
+      priceRange: "M15-M50 depending on size and complexity"
     },
     vinyl: {
       title: "Vinyl Printing Services",
@@ -36,7 +36,7 @@ const ServiceDetail = () => {
         "Wash-resistant and long-lasting results"
       ],
       turnaround: "2-4 business days",
-      priceRange: "$10-$40 depending on size and color options"
+      priceRange: "M10-M40 depending on size and color options"
     },
     velvet: {
       title: "Velvet Printing Services",
@@ -51,7 +51,7 @@ const ServiceDetail = () => {
         "Available in multiple colors and dimensions"
       ],
       turnaround: "4-6 business days",
-      priceRange: "$20-$60 depending on size and complexity"
+      priceRange: "M20-M60 depending on size and complexity"
     },
     custom: {
       title: "Custom Design Services",
@@ -66,7 +66,7 @@ const ServiceDetail = () => {
         "Design ownership transferred to you upon completion"
       ],
       turnaround: "5-7 business days for design process",
-      priceRange: "$75-$200 depending on complexity and revisions"
+      priceRange: "M75-M200 depending on complexity and revisions"
     }
   };
   

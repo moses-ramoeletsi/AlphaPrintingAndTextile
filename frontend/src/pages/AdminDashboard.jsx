@@ -201,7 +201,7 @@ const AdminDashboard = ({}) => {
                   <div>
                     <h3 className="text-lg font-medium text-slate-900">Revenue</h3>
                     <p className="text-2xl font-bold text-slate-900 mt-1">
-                      ${orders.reduce((total, order) => total + order.total, 0).toFixed(2)}
+                      M{orders.reduce((total, order) => total + order.total, 0).toFixed(2)}
                     </p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ const AdminDashboard = ({}) => {
                             <p className="text-sm text-slate-600 mt-1">{order.customer}</p>
                           </div>
                           <div className="mt-3 sm:mt-0 flex items-center space-x-3">
-                            <span className="font-medium">${order.total.toFixed(2)}</span>
+                            <span className="font-medium">M{order.total.toFixed(2)}</span>
                             <button className="text-blue-500 hover:text-blue-600">
                               <Edit className="w-4 h-4" />
                             </button>
@@ -287,7 +287,7 @@ const AdminDashboard = ({}) => {
                               </div>
                             </div>
                             <div className="text-right">
-                              <span className="font-medium">${product.price.toFixed(2)}</span>
+                              <span className="font-medium">M{product.price.toFixed(2)}</span>
                               <p className="text-sm text-slate-600">{product.stock} in stock</p>
                             </div>
                           </div>
@@ -367,7 +367,7 @@ const AdminDashboard = ({}) => {
                           {product.category}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-slate-900">
-                          ${product.price.toFixed(2)}
+                          M{product.price.toFixed(2)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <div className="flex items-center">

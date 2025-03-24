@@ -81,13 +81,13 @@ const Footer = () => {
             <h3 className="text-sm font-bold uppercase tracking-wider">Contact</h3>
             <ul className="space-y-3">
               <li className="text-sm text-slate-300">
-                123 Print Street, Design City
+                Nonyana Ea Mpitsa, Qacha's Nek
               </li>
               <li className="text-sm text-slate-300">
-                info@printshop.com
+                alphaprinting@printshop.com
               </li>
               <li className="text-sm text-slate-300">
-                +1 (555) 123-4567
+                +266 5046-7300
               </li>
               <li>
                 <Link to="/contact" className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors duration-300">
@@ -100,7 +100,7 @@ const Footer = () => {
         
         <div className="pt-8 text-center">
           <p className="text-sm text-slate-400">
-            © {new Date().getFullYear()} PrintShop. All rights reserved.
+            © {new Date().getFullYear()} AlphaPrinting and Textile (By Reanetse Ramoeletsi). All rights reserved.
           </p>
         </div>
       </div>

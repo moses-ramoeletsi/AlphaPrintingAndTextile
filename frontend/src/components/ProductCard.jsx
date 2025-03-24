@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
         <h3 className="text-base font-medium text-slate-900 mb-1">
           {name}
         </h3>
-        <p className="text-blue-500 font-semibold">${price.toFixed(2)}</p>
+        <p className="text-blue-500 font-semibold">M{price.toFixed(2)}</p>
       </div>
     </div>
   );

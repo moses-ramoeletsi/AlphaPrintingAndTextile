@@ -166,7 +166,7 @@ const Products = () => {
                         {product.description}
                       </p>
                       <div className="flex items-center justify-between">
-                        <p className="text-blue-500 font-semibold">${product.price.toFixed(2)}</p>
+                        <p className="text-blue-500 font-semibold">M{product.price.toFixed(2)}</p>
                         <button className="btn-primary py-2 px-4 text-sm">
                           View Details
                         </button>
