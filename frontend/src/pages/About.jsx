@@ -65,7 +65,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-100 text-blue-500 mb-4">
+                <div className="flex items-center justify-center w-12 h-12 rounded-full bg-red-100 text-red-500 mb-4">
                   <feature.icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-2">{feature.title}</h3>
@@ -83,7 +83,7 @@ const About = () => {
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
               href="/services"
-              className="px-6 py-3 rounded-lg bg-blue-500 text-white font-medium hover:bg-blue-600 transition-colors duration-300"
+              className="px-6 py-3 rounded-lg bg-red-500 text-white font-medium hover:bg-red-600 transition-colors duration-300"
             >
               Explore Our Services
             </a>

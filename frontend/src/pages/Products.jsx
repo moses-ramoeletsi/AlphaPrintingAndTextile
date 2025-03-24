@@ -62,7 +62,7 @@ const Products = () => {
       <div className="bg-slate-50 py-10 border-b border-slate-100">
         <div className="container-pad mx-auto max-w-7xl">
           <div className="flex flex-col items-center text-center">
-            <span className="inline-block py-1 px-3 text-xs font-medium text-blue-700 bg-blue-50 rounded-full mb-3">
+            <span className="inline-block py-1 px-3 text-xs font-medium text-red-700 bg-red-50 rounded-full mb-3">
               Our Products
             </span>
             <h1 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
@@ -87,7 +87,7 @@ const Products = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search products..."
-              className="py-2 pl-10 pr-4 w-full bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
+              className="py-2 pl-10 pr-4 w-full bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-slate-900"
             />
           </div>
           
@@ -97,7 +97,7 @@ const Products = () => {
               <select
                 value={selectedCategory}
                 onChange={(e) => setSelectedCategory(e.target.value)}
-                className="py-2 px-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-slate-900"
+                className="py-2 px-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-slate-900"
               >
                 {categories.map(category => (
                   <option key={category} value={category}>
@@ -111,7 +111,7 @@ const Products = () => {
               <button
                 onClick={() => setIsGridView(true)}
                 className={`p-2 rounded-md transition-colors duration-300 ${
-                  isGridView ? 'bg-blue-100 text-blue-500' : 'text-slate-400 hover:text-slate-900'
+                  isGridView ? 'bg-red-100 text-red-500' : 'text-slate-400 hover:text-slate-900'
                 }`}
               >
                 <GridIcon className="w-5 h-5" />
@@ -119,7 +119,7 @@ const Products = () => {
               <button
                 onClick={() => setIsGridView(false)}
                 className={`p-2 rounded-md transition-colors duration-300 ${
-                  !isGridView ? 'bg-blue-100 text-blue-500' : 'text-slate-400 hover:text-slate-900'
+                  !isGridView ? 'bg-red-100 text-red-500' : 'text-slate-400 hover:text-slate-900'
                 }`}
               >
                 <ListIcon className="w-5 h-5" />
@@ -131,7 +131,7 @@ const Products = () => {
         {/* Products */}
         {isLoading ? (
           <div className="flex justify-center items-center py-20">
-            <div className="w-12 h-12 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+            <div className="w-12 h-12 rounded-full border-4 border-red-500 border-t-transparent animate-spin"></div>
           </div>
         ) : filteredProducts.length === 0 ? (
           <div className="text-center py-20">
@@ -166,7 +166,7 @@ const Products = () => {
                         {product.description}
                       </p>
                       <div className="flex items-center justify-between">
-                        <p className="text-blue-500 font-semibold">M{product.price.toFixed(2)}</p>
+                        <p className="text-red-500 font-semibold">M{product.price.toFixed(2)}</p>
                         <button className="btn-primary py-2 px-4 text-sm">
                           View Details
                         </button>

@@ -47,7 +47,7 @@ const ProductCard = ({ product }) => {
               <Eye className="w-4 h-4" />
             </Link>
             <button
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-500 text-white shadow-md transform translate-y-3 transition-transform duration-500 ease-out-expo group-hover:translate-y-0 hover:bg-blue-600"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-red-500 text-white shadow-md transform translate-y-3 transition-transform duration-500 ease-out-expo group-hover:translate-y-0 hover:bg-blue-600"
             >
               <ShoppingCart className="w-4 h-4" />
             </button>
@@ -64,7 +64,7 @@ const ProductCard = ({ product }) => {
         <h3 className="text-base font-medium text-slate-900 mb-1">
           {name}
         </h3>
-        <p className="text-blue-500 font-semibold">M{price.toFixed(2)}</p>
+        <p className="text-red-500 font-semibold">M{price.toFixed(2)}</p>
       </div>
     </div>
   );

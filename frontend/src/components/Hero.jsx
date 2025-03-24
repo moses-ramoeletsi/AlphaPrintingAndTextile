@@ -8,18 +8,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-slate-100 -z-10"></div>
       
       {/* Decorative elements */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-50 -z-10"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-blue-200 rounded-full blur-3xl opacity-30 -z-10"></div>
+      <div className="absolute top-20 right-0 w-96 h-96 bg-red-100 rounded-full blur-3xl opacity-50 -z-10"></div>
+      <div className="absolute bottom-10 left-10 w-72 h-72 bg-red-200 rounded-full blur-3xl opacity-30 -z-10"></div>
       
       <div className="container-pad mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 max-w-2xl">
-            <span className="inline-block py-1.5 px-3 text-xs font-medium text-blue-700 bg-blue-50 rounded-full animate-[slideInFromLeft_0.7s_ease-out_forwards]">
+            <span className="inline-block py-1.5 px-3 text-xs font-medium text-red-700 bg-red-50 rounded-full animate-[slideInFromLeft_0.7s_ease-out_forwards]">
               Professional Clothing Printing Services
             </span>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-slate-900 animate-[slideInFromLeft_0.8s_ease-out_forwards]">
-              Bring Your <span className="text-blue-500">Designs</span> to Life
+              Bring Your <span className="text-red-500">Designs</span> to Life
             </h1>
             
             <p className="text-lg text-slate-700 max-w-xl animate-[slideInFromLeft_0.9s_ease-out_forwards]">

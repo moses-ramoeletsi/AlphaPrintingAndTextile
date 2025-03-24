@@ -153,7 +153,7 @@ const Auth = () => {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white" 
+                  className="w-full bg-red-600 hover:bg-red-700 text-white" 
                 >
                   {isLoading ? (
                     <>
@@ -270,7 +270,7 @@ const Auth = () => {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-blue-600 hover:bg-blue-700 text-white"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white"
                 >
                   {isLoading ? (
                     <>
@@ -291,7 +291,7 @@ const Auth = () => {
           <div className="mt-6 text-center">
             <button
               onClick={() => setIsLogin(!isLogin)}
-              className="text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300"
+              className="text-sm text-red-500 hover:text-red-600 transition-colors duration-300"
             >
               {isLogin 
                 ? "Don't have an account? Sign up" 

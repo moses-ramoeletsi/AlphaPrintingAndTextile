@@ -28,7 +28,7 @@ const ServiceCard = ({ service }) => {
       <div className="p-6 space-y-4">
         <div className="flex items-center space-x-3">
           {Icon && (
-            <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg bg-blue-50 text-blue-500">
+            <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-lg bg-red-50 text-red-500">
               <Icon className="w-5 h-5" />
             </div>
           )}
@@ -39,7 +39,7 @@ const ServiceCard = ({ service }) => {
         
         <Link 
           to={`/services/${id}`} 
-          className="inline-flex items-center text-sm font-medium text-blue-500 hover:text-blue-600 transition-colors duration-300"
+          className="inline-flex items-center text-sm font-medium text-red-500 hover:text-red-600 transition-colors duration-300"
         >
           Learn more
           <ArrowRight className="ml-2 w-4 h-4" />

@@ -139,7 +139,7 @@ const AdminDashboard = ({}) => {
   // Bail early if not mounted to prevent flash of content
   if (!mounted) {
     return <div className="min-h-screen flex items-center justify-center">
-      <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      <div className="w-10 h-10 border-4 border-red-500 border-t-transparent rounded-full animate-spin"></div>
     </div>;
   }
   
@@ -156,7 +156,7 @@ const AdminDashboard = ({}) => {
           <h3 className="text-lg font-medium text-slate-900 mb-2">{error}</h3>
           <button 
             onClick={() => window.location.reload()}
-            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300"
+            className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-300"
           >
             Retry
           </button>
@@ -171,7 +171,7 @@ const AdminDashboard = ({}) => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-blue-50 rounded-full text-blue-500">
+                  <div className="p-3 bg-red-50 rounded-full text-red-500">
                     <ShoppingBag className="w-6 h-6" />
                   </div>
                   <div>
@@ -183,7 +183,7 @@ const AdminDashboard = ({}) => {
               
               <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-blue-50 rounded-full text-blue-500">
+                  <div className="p-3 bg-red-50 rounded-full text-red-500">
                     <Package className="w-6 h-6" />
                   </div>
                   <div>
@@ -195,7 +195,7 @@ const AdminDashboard = ({}) => {
               
               <div className="bg-white rounded-xl border border-slate-100 shadow-sm p-6 hover:shadow-md transition-shadow duration-300">
                 <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-blue-50 rounded-full text-blue-500">
+                  <div className="p-3 bg-red-50 rounded-full text-red-500">
                     <DollarSign className="w-6 h-6" />
                   </div>
                   <div>
@@ -214,7 +214,7 @@ const AdminDashboard = ({}) => {
                   <h3 className="text-lg font-semibold text-slate-900">Recent Orders</h3>
                   <button 
                     onClick={() => setActiveTab('orders')}
-                    className="text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center"
+                    className="text-sm text-red-500 hover:text-red-600 transition-colors duration-300 flex items-center"
                   >
                     View All
                     <ArrowUpRight className="ml-1 w-4 h-4" />
@@ -223,7 +223,7 @@ const AdminDashboard = ({}) => {
                 
                 {isLoading ? (
                   <div className="flex justify-center py-10">
-                    <div className="w-10 h-10 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+                    <div className="w-10 h-10 rounded-full border-4 border-red-500 border-t-transparent animate-spin"></div>
                   </div>
                 ) : (
                   <div className="space-y-4">
@@ -242,7 +242,7 @@ const AdminDashboard = ({}) => {
                           </div>
                           <div className="mt-3 sm:mt-0 flex items-center space-x-3">
                             <span className="font-medium">M{order.total.toFixed(2)}</span>
-                            <button className="text-blue-500 hover:text-blue-600">
+                            <button className="text-red-500 hover:text-red-600">
                               <Edit className="w-4 h-4" />
                             </button>
                           </div>
@@ -258,7 +258,7 @@ const AdminDashboard = ({}) => {
                   <h3 className="text-lg font-semibold text-slate-900">Low Stock Products</h3>
                   <button 
                     onClick={() => setActiveTab('products')}
-                    className="text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center"
+                    className="text-sm text-red-500 hover:text-red-600 transition-colors duration-300 flex items-center"
                   >
                     View All
                     <ArrowUpRight className="ml-1 w-4 h-4" />
@@ -267,7 +267,7 @@ const AdminDashboard = ({}) => {
                 
                 {isLoading ? (
                   <div className="flex justify-center py-10">
-                    <div className="w-10 h-10 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+                    <div className="w-10 h-10 rounded-full border-4 border-red-500 border-t-transparent animate-spin"></div>
                   </div>
                 ) : (
                   <div className="space-y-4">
@@ -313,10 +313,10 @@ const AdminDashboard = ({}) => {
                 <input
                   type="text"
                   placeholder="Search products..."
-                  className="pl-10 pr-4 py-2 w-full border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-slate-50 text-slate-900"
+                  className="pl-10 pr-4 py-2 w-full border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-red-500 bg-slate-50 text-slate-900"
                 />
               </div>
-                <button className="flex items-center justify-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors duration-300">
+                <button className="flex items-center justify-center px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors duration-300">
                   <PlusSquare className="w-5 h-5 mr-2" />
                   Add Product
                 </button>
@@ -325,7 +325,7 @@ const AdminDashboard = ({}) => {
             
             {isLoading ? (
               <div className="flex justify-center py-10">
-                <div className="w-10 h-10 rounded-full border-4 border-blue-500 border-t-transparent animate-spin"></div>
+                <div className="w-10 h-10 rounded-full border-4 border-red-500 border-t-transparent animate-spin"></div>
               </div>
             ) : (
               <div className="overflow-x-auto">
@@ -379,7 +379,7 @@ const AdminDashboard = ({}) => {
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right text-sm">
                           <div className="flex items-center justify-end space-x-3">
-                            <button className="text-blue-500 hover:text-blue-600 transition-colors duration-300">
+                            <button className="text-red-500 hover:text-red-600 transition-colors duration-300">
                               <Edit className="w-4 h-4" />
                             </button>
                             <button className="text-red-500 hover:text-red-600 transition-colors duration-300">
@@ -421,7 +421,7 @@ const AdminDashboard = ({}) => {
           <div className="lg:col-span-3">
             <div className="bg-white rounded-xl border border-slate-100 shadow-sm overflow-hidden sticky top-24">
               <div className="p-6 flex items-center space-x-4 border-b border-slate-100">
-                <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0">
                   <span className="font-medium text-white">{user?.name ? user.name.charAt(0) : 'A'}</span>
                 </div>
                 <div>
@@ -437,7 +437,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('overview')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'overview' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
@@ -450,7 +450,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('products')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'products' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
@@ -463,7 +463,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('orders')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'orders' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
@@ -476,7 +476,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('users')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'users' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
@@ -489,7 +489,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('analytics')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'analytics' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >
@@ -502,7 +502,7 @@ const AdminDashboard = ({}) => {
                       onClick={() => setActiveTab('settings')}
                       className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                         activeTab === 'settings' 
-                          ? 'bg-blue-50 text-blue-600' 
+                          ? 'bg-red-50 text-red-600' 
                           : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                       }`}
                     >

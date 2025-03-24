@@ -119,7 +119,7 @@ const Home = () => {
           <div 
             className="text-center max-w-2xl mx-auto mb-12"
           >
-            <span className="inline-block py-1 px-3 text-xs font-medium text-blue-700 bg-blue-50 rounded-full mb-3">
+            <span className="inline-block py-1 px-3 text-xs font-medium text-red-700 bg-red-50 rounded-full mb-3">
               Our Services
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
@@ -141,7 +141,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link 
               to="/services" 
-              className="inline-flex items-center text-blue-500 hover:text-blue-600 font-medium transition-colors duration-300"
+              className="inline-flex items-center text-red-500 hover:text-red-600 font-medium transition-colors duration-300"
             >
               View All Services
               <ArrowRight className="ml-2 w-4 h-4" />
@@ -154,7 +154,7 @@ const Home = () => {
       <section id="products" className="section bg-slate-50">
         <div className="container-pad mx-auto max-w-7xl">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <span className="inline-block py-1 px-3 text-xs font-medium text-blue-700 bg-blue-50 rounded-full mb-3">
+            <span className="inline-block py-1 px-3 text-xs font-medium text-red-700 bg-red-50 rounded-full mb-3">
               Featured Products
             </span>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
@@ -188,7 +188,7 @@ const Home = () => {
         <div className="container-pad mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block py-1 px-3 text-xs font-medium text-blue-700 bg-blue-50 rounded-full mb-3">
+              <span className="inline-block py-1 px-3 text-xs font-medium text-red-700 bg-red-50 rounded-full mb-3">
                 Why Choose Us
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-900">
@@ -201,7 +201,7 @@ const Home = () => {
               <div className="space-y-6">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-blue-50 text-blue-500">
+                    <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full bg-red-50 text-red-500">
                       <feature.icon className="w-5 h-5" />
                     </div>
                     <div>
@@ -225,7 +225,7 @@ const Home = () => {
               </div>
               
               {/* Decorative elements */}
-              <div className="absolute -top-6 -left-6 w-32 h-32 bg-blue-500/10 backdrop-blur-sm rounded-xl -z-10"></div>
+              <div className="absolute -top-6 -left-6 w-32 h-32 bg-red-500/10 backdrop-blur-sm rounded-xl -z-10"></div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-white shadow-md rounded-lg"></div>
             </div>
           </div>
@@ -245,7 +245,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link 
                 to="/products" 
-                className="btn-primary bg-blue-500 hover:bg-blue-600"
+                className="btn-primary bg-red-500 hover:bg-red-600"
               >
                 Browse Products
               </Link>

@@ -79,7 +79,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-2xl font-bold tracking-tight text-slate-900 transition-all duration-300 hover:text-blue-500"
+            className="text-2xl font-bold tracking-tight text-slate-900 transition-all duration-300 hover:text-red-500"
           >
             <img className="h-20 w-20" src="/AlphaLogo.png" alt="AlphaPrinting" />
           </Link>
@@ -92,7 +92,7 @@ const Navbar = () => {
                 to={link.path}
                 className={`text-sm font-medium transition-all duration-300 ${
                   location.pathname === link.path 
-                    ? 'text-blue-500' 
+                    ? 'text-red-500' 
                     : 'text-slate-700 hover:text-slate-900'
                 }`}
               >
@@ -160,7 +160,7 @@ const Navbar = () => {
               to={link.path}
               className={`block text-base font-medium transition-all duration-300 ${
                 location.pathname === link.path 
-                  ? 'text-blue-500' 
+                  ? 'text-red-500' 
                   : 'text-slate-700 hover:text-slate-900'
               }`}
             >

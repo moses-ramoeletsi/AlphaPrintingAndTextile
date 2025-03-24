@@ -84,8 +84,8 @@ const OrderPage = () => {
                   className={`
                     border rounded-xl p-4 cursor-pointer transition-all duration-300
                     ${orderDetails.product === product.id 
-                      ? 'border-blue-500 bg-blue-50' 
-                      : 'border-slate-200 hover:border-blue-300 hover:bg-slate-50'}
+                      ? 'border-red-500 bg-red-50' 
+                      : 'border-slate-200 hover:border-red-300 hover:bg-slate-50'}
                   `}
                   onClick={() => setOrderDetails(prev => ({ ...prev, product: product.id }))}
                 >
@@ -96,7 +96,7 @@ const OrderPage = () => {
                     </div>
                     <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${
                       orderDetails.product === product.id 
-                        ? 'border-blue-500 bg-blue-500 text-white' 
+                        ? 'border-red-500 bg-red-500 text-white' 
                         : 'border-slate-300'
                     }`}>
                       {orderDetails.product === product.id && <Check className="w-3 h-3" />}
@@ -118,8 +118,8 @@ const OrderPage = () => {
                   className={`
                     border rounded-xl p-4 cursor-pointer transition-all duration-300
                     ${orderDetails.printType === type.id 
-                      ? 'border-blue-500 bg-blue-50' 
-                      : 'border-slate-200 hover:border-blue-300 hover:bg-slate-50'}
+                      ? 'border-red-500 bg-red-50' 
+                      : 'border-slate-200 hover:border-red-300 hover:bg-slate-50'}
                   `}
                   onClick={() => setOrderDetails(prev => ({ ...prev, printType: type.id }))}
                 >
@@ -130,7 +130,7 @@ const OrderPage = () => {
                     </div>
                     <div className={`w-5 h-5 rounded-full border flex items-center justify-center ${
                       orderDetails.printType === type.id 
-                        ? 'border-blue-500 bg-blue-500 text-white' 
+                        ? 'border-red-500 bg-red-500 text-white' 
                         : 'border-slate-300'
                     }`}>
                       {orderDetails.printType === type.id && <Check className="w-3 h-3" />}
@@ -210,7 +210,7 @@ const OrderPage = () => {
                   type="text"
                   value={orderDetails.colors}
                   onChange={handleChange}
-                  placeholder="Specify colors (e.g., Red, Blue, Black)"
+                  placeholder="Specify colors (e.g., Red, red, Black)"
                   className="input-field"
                 />
               </div>
@@ -221,7 +221,7 @@ const OrderPage = () => {
                 </label>
                 <div className={`
                   border-2 border-dashed rounded-lg p-6 text-center transition-colors duration-300
-                  ${orderDetails.design ? 'border-blue-300 bg-blue-50' : 'border-slate-300 hover:border-blue-300'}
+                  ${orderDetails.design ? 'border-red-300 bg-red-50' : 'border-slate-300 hover:border-red-300'}
                 `}>
                   {orderDetails.designPreview ? (
                     <div className="space-y-3">
@@ -242,7 +242,7 @@ const OrderPage = () => {
                     <div className="space-y-3">
                       <Upload className="w-10 h-10 text-slate-400 mx-auto" />
                       <p className="text-slate-600">
-                        Drag & drop your design file or <label htmlFor="design" className="text-blue-500 cursor-pointer hover:text-blue-600 transition-colors duration-300">browse</label>
+                        Drag & drop your design file or <label htmlFor="design" className="text-red-500 cursor-pointer hover:text-red-600 transition-colors duration-300">browse</label>
                       </p>
                       <p className="text-xs text-slate-500">Supports: PNG, JPG, AI, PSD (Max 10MB)</p>
                       <input 
@@ -501,7 +501,7 @@ const OrderPage = () => {
               <div className="pt-2">
                 <div className="flex justify-between font-medium">
                   <p className="text-slate-900">Total</p>
-                  <p className="text-blue-600">M{total.toFixed(2)}</p>
+                  <p className="text-red-600">M{total.toFixed(2)}</p>
                 </div>
               </div>
             </div>
@@ -592,7 +592,7 @@ const OrderPage = () => {
                   </button>
                   <button 
                     type="submit" 
-                    className="btn-primary flex items-center bg-blue-500 hover:bg-blue-600"
+                    className="btn-primary flex items-center bg-red-500 hover:bg-red-600"
                   >
                     Place Order
                     <Package className="ml-2 w-4 h-4" />
@@ -627,7 +627,7 @@ const OrderPage = () => {
                   className={`
                     w-10 h-10 rounded-full flex items-center justify-center z-10
                     ${currentStep >= step 
-                      ? 'bg-blue-500 text-white' 
+                      ? 'bg-red-500 text-white' 
                       : 'bg-slate-200 text-slate-500'}
                     transition-colors duration-300
                   `}
@@ -640,7 +640,7 @@ const OrderPage = () => {
                 </div>
                 <span className={`
                   text-xs font-medium mt-2 
-                  ${currentStep >= step ? 'text-blue-500' : 'text-slate-500'}
+                  ${currentStep >= step ? 'text-red-500' : 'text-slate-500'}
                 `}>
                   {step === 1 ? 'Product' : 
                    step === 2 ? 'Design' : 
@@ -651,7 +651,7 @@ const OrderPage = () => {
                 {step < 4 && (
                   <div className={`
                     absolute top-5 w-full h-0.5 left-1/2 
-                    ${currentStep > step ? 'bg-blue-500' : 'bg-slate-200'}
+                    ${currentStep > step ? 'bg-red-500' : 'bg-slate-200'}
                   `}></div>
                 )}
               </div>

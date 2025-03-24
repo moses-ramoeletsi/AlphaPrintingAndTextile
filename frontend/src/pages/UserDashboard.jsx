@@ -74,8 +74,8 @@ const UserDashboard = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-white rounded-lg shadow p-5 border border-slate-100">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-blue-50 p-3 rounded-full">
-                    <Package className="h-6 w-6 text-blue-500" />
+                  <div className="bg-red-50 p-3 rounded-full">
+                    <Package className="h-6 w-6 text-red-500" />
                   </div>
                   <div>
                     <div className="text-sm text-slate-500">Orders</div>
@@ -115,7 +115,7 @@ const UserDashboard = () => {
               <div className="flex items-center justify-between p-5 border-b border-slate-100">
                 <h3 className="text-lg font-medium">Recent Orders</h3>
                 <button onClick={() => setActiveTab('orders')}
-                  className="text-sm text-blue-500 hover:text-blue-600 transition-colors duration-300 flex items-center"
+                  className="text-sm text-red-500 hover:text-red-600 transition-colors duration-300 flex items-center"
                 >
                   View All
                   <ArrowRight className="ml-1 w-4 h-4" />
@@ -124,7 +124,7 @@ const UserDashboard = () => {
               
               {isLoading ? (
                 <div className="p-10 text-center">
-                  <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
+                  <div className="w-10 h-10 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
                 </div>
               ) : orders.length > 0 ? (
                 <div className="divide-y divide-slate-100">
@@ -145,7 +145,7 @@ const UserDashboard = () => {
                             {order.status}
                           </span>
                           <span className="font-medium">${order.total.toFixed(2)}</span>
-                          <button className="text-blue-500 hover:text-blue-600 text-sm">Details</button>
+                          <button className="text-red-500 hover:text-red-600 text-sm">Details</button>
                         </div>
                       </div>
                     </div>
@@ -158,7 +158,7 @@ const UserDashboard = () => {
               )}
               
               <div className="p-5 border-t border-slate-100">
-                <Link to="/order" className="flex items-center justify-center w-full py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors duration-300">
+                <Link to="/order" className="flex items-center justify-center w-full py-2 bg-red-50 text-red-600 rounded-lg hover:bg-red-100 transition-colors duration-300">
                   Place New Order
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Link>
@@ -176,7 +176,7 @@ const UserDashboard = () => {
             
             {isLoading ? (
               <div className="p-10 text-center">
-                <div className="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
+                <div className="w-10 h-10 border-4 border-red-500 border-t-transparent rounded-full animate-spin mx-auto"></div>
               </div>
             ) : orders.length > 0 ? (
               <div className="overflow-x-auto">
@@ -218,7 +218,7 @@ const UserDashboard = () => {
                           M{order.total.toFixed(2)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-slate-500">
-                          <button className="text-blue-500 hover:text-blue-600">
+                          <button className="text-red-500 hover:text-red-600">
                             Details
                           </button>
                         </td>
@@ -230,7 +230,7 @@ const UserDashboard = () => {
             ) : (
               <div className="p-10 text-center">
                 <p className="text-slate-500 mb-4">You haven't placed any orders yet.</p>
-                <Link to="/products" className="text-blue-500 hover:text-blue-600">
+                <Link to="/products" className="text-red-500 hover:text-red-600">
                   Explore Products
                 </Link>
               </div>
@@ -277,7 +277,7 @@ const UserDashboard = () => {
               </div>
               
               <div className="pt-4">
-                <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-300">
+                <button className="px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 transition-colors duration-300">
                   Save Changes
                 </button>
               </div>
@@ -304,7 +304,7 @@ const UserDashboard = () => {
                     <div className="flex items-center">
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="sr-only peer" defaultChecked />
-                        <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
                       </label>
                     </div>
                   </div>
@@ -317,7 +317,7 @@ const UserDashboard = () => {
                     <div className="flex items-center">
                       <label className="relative inline-flex items-center cursor-pointer">
                         <input type="checkbox" className="sr-only peer" />
-                        <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        <div className="w-11 h-6 bg-slate-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-red-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-red-600"></div>
                       </label>
                     </div>
                   </div>
@@ -354,8 +354,8 @@ const UserDashboard = () => {
           <div className="bg-white rounded-lg shadow border border-slate-100 sticky top-6">
             <div className="p-5 border-b border-slate-100">
               <div className="flex items-center space-x-3">
-                <div className="bg-blue-100 p-3 rounded-full">
-                  <User className="h-6 w-6 text-blue-600" />
+                <div className="bg-red-100 p-3 rounded-full">
+                  <User className="h-6 w-6 text-red-600" />
                 </div>
                 <div>
                   <div className="font-medium">{user?.name}</div>
@@ -371,7 +371,7 @@ const UserDashboard = () => {
                     onClick={() => setActiveTab('overview')}
                     className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                       activeTab === 'overview' 
-                        ? 'bg-blue-50 text-blue-600' 
+                        ? 'bg-red-50 text-red-600' 
                         : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                     }`}
                   >
@@ -384,7 +384,7 @@ const UserDashboard = () => {
                     onClick={() => setActiveTab('orders')}
                     className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                       activeTab === 'orders' 
-                        ? 'bg-blue-50 text-blue-600' 
+                        ? 'bg-red-50 text-red-600' 
                         : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                     }`}
                   >
@@ -397,7 +397,7 @@ const UserDashboard = () => {
                     onClick={() => setActiveTab('profile')}
                     className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                       activeTab === 'profile' 
-                        ? 'bg-blue-50 text-blue-600' 
+                        ? 'bg-red-50 text-red-600' 
                         : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                     }`}
                   >
@@ -410,7 +410,7 @@ const UserDashboard = () => {
                     onClick={() => setActiveTab('settings')}
                     className={`w-full flex items-center space-x-3 px-3 py-2 rounded-lg transition-colors duration-300 ${
                       activeTab === 'settings' 
-                        ? 'bg-blue-50 text-blue-600' 
+                        ? 'bg-red-50 text-red-600' 
                         : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'
                     }`}
                   >

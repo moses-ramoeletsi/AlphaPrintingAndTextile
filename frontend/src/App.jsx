@@ -34,7 +34,7 @@ function App() {
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
         <div className="text-center space-y-4">
           <h1 className="text-2xl font-bold text-slate-900">PrintShop</h1>
-          <div className="w-10 h-10 rounded-full border-4 border-blue-500 border-t-transparent animate-spin mx-auto"></div>
+          <div className="w-10 h-10 rounded-full border-4 border-red-500 border-t-transparent animate-spin mx-auto"></div>
         </div>
       </div>
     );
@@ -62,7 +62,7 @@ const ProtectedRoute = ({ children, requireAdmin = false }) => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="w-8 h-8 rounded-full border-3 border-blue-500 border-t-transparent animate-spin"></div>
+        <div className="w-8 h-8 rounded-full border-3 border-red-500 border-t-transparent animate-spin"></div>
       </div>
     );
   }
@@ -88,7 +88,7 @@ const AuthRedirect = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="w-8 h-8 rounded-full border-3 border-blue-500 border-t-transparent animate-spin"></div>
+        <div className="w-8 h-8 rounded-full border-3 border-red-500 border-t-transparent animate-spin"></div>
       </div>
     );
   }
@@ -109,7 +109,7 @@ const AppRoutes = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="w-8 h-8 rounded-full border-3 border-blue-500 border-t-transparent animate-spin"></div>
+        <div className="w-8 h-8 rounded-full border-3 border-red-500 border-t-transparent animate-spin"></div>
       </div>
     );
   }
