@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronRight, Package, Upload, Check, Info, CreditCard } from 'lucide-react';
@@ -611,7 +610,7 @@ const OrderPage = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 bg-slate-50">
       <div className="container-pad mx-auto max-w-4xl">
-        <div className="mb-10 slide-in-left animate-[slideInFromLeft_0.7s_ease-out]">
+        <div className="mb-10 slide-in-left">
           <h1 className="text-3xl font-bold text-slate-900 mb-2">Create Your Order</h1>
           <p className="text-slate-600">
             Follow the steps below to customize and place your printing order.
@@ -619,7 +618,7 @@ const OrderPage = () => {
         </div>
         
         {/* Progress Steps */}
-        <div className="mb-10 slide-up animate-[slideUp_0.7s_ease-out]">
+        <div className="mb-10 slide-up">
           <div className="flex justify-between">
             {[1, 2, 3, 4].map((step) => (
               <div key={step} className="relative flex flex-col items-center">
@@ -660,7 +659,7 @@ const OrderPage = () => {
         </div>
         
         {/* Content */}
-        <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-8 slide-up animate-[slideUp_0.8s_ease-out]">
+        <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-8 slide-up">
           {renderStepContent()}
         </div>
       </div>
