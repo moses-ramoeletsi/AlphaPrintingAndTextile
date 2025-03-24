@@ -13,6 +13,10 @@ import UserDashboard from './pages/UserDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 import OrderPage from './pages/OrderPage';
 import NotFound from './pages/NotFound';
+import { Toaster } from './components/ui/toaster';
+import { Toaster as Sonner} from './components/ui/sonner';
+import { TooltipProvider } from './components/ui/tooltip';
+
 
 function App() {
   const [appReady, setAppReady] = useState(false);
@@ -37,11 +41,15 @@ function App() {
   }
  
   return (
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
     <BrowserRouter>
       <AuthProvider>
         <AppRoutes />
       </AuthProvider>
     </BrowserRouter>
+    </TooltipProvider>
   )
 }
 
